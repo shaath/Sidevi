@@ -1,0 +1,17 @@
+package testNG;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.BeforeClass;
+
+public class PrimusBankLogin {
+
+		public static WebDriver driver;
+		@BeforeClass
+		public void Br_Lunch()
+		{
+			driver=new FirefoxDriver();
+		}
+
+
+}

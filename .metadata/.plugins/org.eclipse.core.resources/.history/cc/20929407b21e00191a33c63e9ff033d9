@@ -1,0 +1,18 @@
+package xlops;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelOps {
+
+	public static void main(String[] args) throws FileNotFoundException
+	{
+		String xlpath="F:\\Sridevi_Vennela\\Workspace\\SelenumProject\\src\\testdata\\Testdata.xlsx";
+		FileInputStream fi=new FileInputStream(xlpath);
+		
+		XSSFWorkbook wb=new XSSFWorkbook(fi);
+	}
+
+}
